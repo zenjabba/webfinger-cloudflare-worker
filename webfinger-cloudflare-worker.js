@@ -1,4 +1,4 @@
-// So you want to use webfinger to map every user at your site so they can add @ to their email (e.g. @kurt@seifried.org) and use 
+a// So you want to use webfinger to map every user at your site so they can add @ to their email (e.g. @kurt@seifried.org) and use 
 // that as a Mastodon ID to redirect to whatever Mastodon ID they're actually using?
 
 // Simply deploy webfinger-cloudflare-worker.js as a Cloudflare Worker using a route such as https://seifried.org/.well-known/webfinger* 
@@ -22,8 +22,8 @@
 // TODO: deployment via wrangler bits
 
 const redirectMap = new Map([
-  ['kurt@seifried.org', '@kurtseifried@mastodon.social'],
-  ['test@seifried.org', '@test@tld'],
+  ['zenjabba@digitalmonks.org', '@zenjabba@digitalmonks.org'],
+  ['armsby@digitalmonks.org', '@arsmby@digitalmonks.org'],
 ]);
 
 async function handleRequest(request) {
